@@ -2,11 +2,23 @@
   "name": "parbak-b2b",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "echo \"→ app bazında çalıştırın (apps/backend, apps/frontend)\"",
     "lint": "eslint \"**/*.{ts,tsx,js,json,cjs,mjs}\" --max-warnings 0",
     "format": "prettier --write .",
-    "test": "echo \"tests app bazında\""
+    "test": "echo \"tests app bazında\"",
+    "prepare": "husky install"
   },
-  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f"
+  "packageManager": "pnpm@10.9.0+sha512.0486e394640d3c1fb3c9d43d49cf92879ff74f8516959c235308f5a8f62e2e19528a65cdc2a3058f587cde71eba3d5b56327c8c33a97e4c4051ca48a10ca2d5f",
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3"
+  }
 }
